@@ -40,6 +40,7 @@ const resolvers = {
       const { name, age, isMarried } = args;
       const newUser = { id: String(users.length + 1), name, age, isMarried };
       users.push(newUser);
+      return newUser;
     },
   },
 };
